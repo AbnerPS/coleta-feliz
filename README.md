@@ -8,7 +8,7 @@ O game **Coleta Feliz** é um projeto simples desenvolvido em Java para aprovaç
  
 O objetivo do jogo é coletar o máximo de itens recicláveis possíveis e depositar em suas respectivas lixeiras dentro do tempo limite. Cada reciclável depositado na lixeira correta você ganha 1 ponto, caso deposite na lixeira errada você perde 1 ponto.
 
-![Persomagem](./src/imagens/down.gif)
+![Persomagem pra baixo](./src/imagens/down.gif) ![Persomagem pra cima](./src/imagens/up.gif) ![Persomagem pra direita](./src/imagens/right.gif)  ![Persomagem pra esquerda](./src/imagens/left.gif)
 
 ## Niveis de dificuldade
 - Fácil - Cronometro e recicláveis em velocidade razoável e lixeiras nas bordas da fase
