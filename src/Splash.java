@@ -11,53 +11,51 @@ import javax.swing.JWindow;
 
 public class Splash extends JWindow {
 
-	private int duration; // Tempo de duração do Splash
+    private int duration; // Tempo de duraï¿½ï¿½o do Splash
 
-	public Splash(int d) {
-		duration = d; // parâmetro sendo passado para variável
-	}
+    public Splash(int d) {
+        duration = d; // parï¿½metro sendo passado para variï¿½vel
+    }
 
-	public void showSplash() {
-		JPanel content = (JPanel) getContentPane(); // Criando fundo
-		content.setBackground(Color.black); // Setando a cor
+    public void showSplash() {
+        JPanel content = (JPanel) getContentPane(); // Criando fundo
+        content.setBackground(Color.black); // Setando a cor
 
-		// Configura a posição e o tamanho da janela
-		int width = 600;
-		int height = 200;
-		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
-		int x = (screen.width - width) / 2;
-		int y = (screen.height - height) / 2;
-		setBounds(x, y, width, height);
+        // Configura a posiï¿½ï¿½o e o tamanho da janela
+        int width = 600;
+        int height = 200;
+        Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (screen.width - width) / 2;
+        int y = (screen.height - height) / 2;
+        setBounds(x, y, width, height);
 
-		// Constrói o splash screen
-		JLabel label = new JLabel(new ImageIcon(
-				//"C:\\Users\\geova\\OneDrive\\Documentos\\APS_coleta\\3º Semestre\\ColetaFeliz\\src\\Splash.png",
-				"C:\\Users\\Abner\\Documents\\Atividades%20Pr%C3%A1ticas%20Supervisionadas\\3º Semestre\\ColetaFeliz\\src\\Splash.png")); // Imagem
-		JLabel copyrt = new JLabel("Copyright 2018, Colheita Feliz", JLabel.CENTER); // Texto inferior
-		copyrt.setFont(new Font("Sans-Serif", Font.BOLD, 12)); // Características da fonte
-		content.add(label, BorderLayout.CENTER); // alinhando ao centro
-		content.add(copyrt, BorderLayout.SOUTH); // alinhando abaixo
-		Color corborda = new Color(0, 0, 0, 0); // criando cor
-		content.setBorder(BorderFactory.createLineBorder(corborda, 10)); // setando cor e espessura da borda
-		setVisible(true); // Torna a janela visível
+        // Constrï¿½i o splash screen
+        JLabel label = new JLabel(new ImageIcon("src\\imagens\\Splash.png")); // Imagem
+        JLabel copyrt = new JLabel("Copyright 2018, Colheita Feliz", JLabel.CENTER); // Texto inferior
+        copyrt.setFont(new Font("Sans-Serif", Font.BOLD, 12)); // Caracterï¿½sticas da fonte
+        content.add(label, BorderLayout.CENTER); // alinhando ao centro
+        content.add(copyrt, BorderLayout.SOUTH); // alinhando abaixo
+        Color corborda = new Color(0, 0, 0, 0); // criando cor
+        content.setBorder(BorderFactory.createLineBorder(corborda, 10)); // setando cor e espessura da borda
+        setVisible(true); // Torna a janela visï¿½vel
 
-		// Espera até que os recursos estejam carregados
-		try {
-			Thread.sleep(duration);
-		} catch (Exception e) {
-		}
-		setVisible(false);
-	}
+        // Espera atï¿½ que os recursos estejam carregados
+        try {
+            Thread.sleep(duration);
+        } catch (Exception e) {
+        }
+        setVisible(false);
+    }
 
-	public void showSplashAndExit() {
-		showSplash(); // Executa Splash
-		Menu menu = new Menu(); // Abre Menu
+    public void showSplashAndExit() {
+        showSplash(); // Executa Splash
+        Menu menu = new Menu(); // Abre Menu
 
-	}
+    }
 
-	public static void main(String[] args) {
-		// Mostra uma imagem com o título da aplicação
-		Splash splash = new Splash(1000); // Seta Splash com duração no parâmetro
-		splash.showSplashAndExit(); // Exibe e chama Menu
-	}
+    public static void main(String[] args) {
+        // Mostra uma imagem com o tï¿½tulo da aplicaï¿½ï¿½o
+        Splash splash = new Splash(1000); // Seta Splash com duraï¿½ï¿½o no parï¿½metro
+        splash.showSplashAndExit(); // Exibe e chama Menu
+    }
 }
