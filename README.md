@@ -1,6 +1,6 @@
-# Game Coleta Feliz
+# Game Coleta Feliz :video_game:
  
-![VERSÃO DO SW](https://img.shields.io/badge/Version-1.0-green.svg)         ![LINGUAGEM FINALIDADE](https://img.shields.io/badge/Java-game-green.svg)
+![VERSÃO DO SW](https://img.shields.io/badge/Version-1.0-green.svg)         ![LINGUAGEM FINALIDADE](https://img.shields.io/badge/Java-Game-green.svg)
  
 O game **Coleta Feliz** é um projeto simples desenvolvido em Java para aprovação do 3ª semestre do curso de Ciência da Computação.
  
